@@ -112,6 +112,7 @@ body {
     font-weight: 700;
     letter-spacing: 0;
     line-height: 35px;
+    font-size: 1.9em;
 }
 
 .mobile-hero-subtxt {
@@ -126,10 +127,10 @@ body {
 .mobile-shop-now-link {
     color: hsl(0, 0%, 0%);
     text-decoration: none;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 12px;
 }
 
 .mobile-shop-now-icon {
@@ -160,13 +161,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 7px;
     font-weight: 700;
-    line-height: 25px;
+    font-size: 1em;
 }
 
 .mobile-about {
-    margin-top: 25px;
     color: hsl(0, 0%, 63%);
-    line-height: 25px;
 }
 
 .mobile-about-img {
@@ -175,11 +174,6 @@ body {
 
 .mobile-slide-two-nav {
     background-image: url("images\\mobile-image-hero-2.jpg");
-}
-
-.mobile-side-two-subtxt {
-    width: 55vw;
-    line-height: 22px;
 }
 
 .mobile-slide-three-nav {
