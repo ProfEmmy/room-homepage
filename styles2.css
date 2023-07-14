@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+.desktop-div {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+.mobile-nav {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("images\\mobile-image-hero-1.jpg");
+    background-size: 100vw 60vh;
+    background-repeat: no-repeat;
+}
+
+.mobile-nav-div {
+    width: 100vw;
+    height: 12vh;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-inner-navdiv {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: left;
+}
+
+.mobile-logo {
+    margin-top: 5px;
+}
+
+.mobile-navigate-iconsdiv {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    height: 48vh;
+    width: 97vw;
+}
+
+.mobile-navigate-icons {
+    background-color: hsl(0, 0%, 0%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    width: 29vw;
+    height: 9vh;
+}
+
+.mobile-navigator-div {
+    background-color: white;
+    width: 100vw;
+    height: 16vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navigator {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.mobile-navs>a {
+    color: black;
+    margin-left: 7vw;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.overlay {
+    background-color: hsl(0, 0%, 0%, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mobile-hero-div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 65vh;
+}
+
+.mobile-hero {
+    width: 75vw;
+    margin-top: 4vh;
+}
+
+.mobile-hero-txt {
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 35px;
+    font-size: 2.3em;
+}
+
+.mobile-hero-subtxt {
+    color: hsl(0, 0%, 63%);
+    line-height: 20px;
+    font-size: .95em;
+}
+
+.mobile-shop-nowdiv {
+    padding-top: 30px;
+}
+
+.mobile-shop-now-link {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.mobile-shop-now-icon {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.mobile-main>img {
+    width: 100vw;
+    height: 35vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mobile-about-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 100vw;
+}
+
+.mobile-about-innerdiv {
+    width: 75vw;
+}
+
+.mobile-about-heading {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.mobile-about {
+    margin-top: 25px;
+    color: hsl(0, 0%, 63%);
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.mobile-about-img {
+    margin-bottom: 0;
+}
+
+.mobile-slide-two-nav {
+    background-image: url("images\\mobile-image-hero-2.jpg");
+}
+
+.mobile-side-two-subtxt {
+    width: 55vw;
+    line-height: 22px;
+}
+
+.mobile-slide-three-nav {
+    background-image: url("images\\mobile-image-hero-3.jpg");
+}
+
+.display {
+    display: none;
+}
