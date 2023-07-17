@@ -104,6 +104,15 @@ close_icons.forEach(close_icon => {
     })
 })
 
+overlays.forEach(overlay => {
+    overlay.addEventListener("click", e => {
+        e.target.classList.add("display")
+        mobile_navigators.forEach(mobile_navigator => {
+            mobile_navigator.classList.add("display")
+        })
+    })
+})
+
 const mobile_angles_left = Array.from(document.querySelectorAll(".mobile-angle-left"))
 const mobile_angles_right = Array.from(document.querySelectorAll(".mobile-angle-right"))
 

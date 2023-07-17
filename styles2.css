@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(-2vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: .9;
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(2vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        height: .5vh;
+        opacity: 0;
+    }
+
+    50% {
+        height: 7.5vh;
+        opacity: .3;
+    }
+
+    100% {
+        height: 15vh;
+        opacity: 1;
+    }
+}
+
 .desktop-div {
     display: none;
 }
@@ -63,7 +118,7 @@ body {
 .mobile-navigator-div {
     background-color: white;
     width: 100vw;
-    height: 16vh;
+    height: 15vh;
     position: fixed;
     left: 0;
     right: 0;
@@ -71,6 +126,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideInTop .5s linear;
 }
 
 .mobile-navigator {
@@ -114,12 +170,18 @@ body {
     line-height: 35px;
     font-size: 1.8em;
     width: 100vw;
+    animation: fadeInTop .5s ease-out .2s both;
 }
 
 .mobile-hero-subtxt {
     color: hsl(0, 0%, 63%);
     line-height: 20px;
-    font-size: .8em,
+    animation: fadeIn .5s ease-out .2s both;
+}
+
+.mobile-shop-nowdiv {
+    padding-top: 2vh;
+    animation: fadeInBottom .5s ease-out .2s both;
 }
 
 .mobile-shop-now-link {
@@ -156,7 +218,7 @@ body {
 
 .mobile-about-heading {
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: .35em;
     font-weight: 700;
     font-size: 1em;
     width: 80vw;
@@ -164,7 +226,7 @@ body {
 
 .mobile-about {
     margin-top: 25px;
-    line-height: 22px;
+    line-height: 23px;
     color: hsl(0, 0%, 63%);
 }
 
