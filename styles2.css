@@ -160,7 +160,6 @@ body {
     font-weight: 700;
     font-size: 1em;
     width: 80vw;
-    background-color: red;
 }
 
 .mobile-about {
@@ -168,7 +167,6 @@ body {
     line-height: 22px;
     color: hsl(0, 0%, 63%);
     background-color: red;
-    width: 80vw;
 }
 
 .mobile-about-img {
