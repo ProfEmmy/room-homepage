@@ -16,7 +16,7 @@
 
 @keyframes fadeInTop {
     0% {
-        transform: translateY(-2vh);
+        transform: translateY(-3vh);
         opacity: 0;
     }
 
@@ -28,7 +28,7 @@
 
 @keyframes fadeInBottom {
     0% {
-        transform: translateY(2vh);
+        transform: translateY(3vh);
         opacity: 0;
     }
 
@@ -40,7 +40,7 @@
 
 @keyframes slideInTop {
     0% {
-        height: .5vh;
+        height: .3vh;
         opacity: 0;
     }
 
@@ -52,6 +52,32 @@
     100% {
         height: 15vh;
         opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        display: flex;
+        height: 15vh;
+        opacity: 1;
+    }
+
+    25% {
+        display: flex;
+        height: 6vh;
+        opacity: .9;
+    }
+
+    50% {
+        display: flex;
+        height: 2vh;
+        opacity: .5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        height: 0;
     }
 }
 
@@ -102,7 +128,6 @@ body {
     justify-content: right;
     align-items: end;
     height: 48vh;
-    width: 97vw;
 }
 
 .mobile-navigate-icons {
@@ -170,18 +195,18 @@ body {
     line-height: 35px;
     font-size: 1.8em;
     width: 100vw;
-    animation: fadeInTop .5s ease-out .2s both;
+    animation: fadeInTop .8s ease-out .2s both;
 }
 
 .mobile-hero-subtxt {
     color: hsl(0, 0%, 63%);
     line-height: 20px;
-    animation: fadeIn .5s ease-out .2s both;
+    animation: fadeIn .8s ease-out .2s both;
 }
 
 .mobile-shop-nowdiv {
     padding-top: 2vh;
-    animation: fadeInBottom .5s ease-out .2s both;
+    animation: fadeInBottom .8s ease-out .2s both;
 }
 
 .mobile-shop-now-link {
@@ -240,6 +265,10 @@ body {
 
 .mobile-slide-three-nav {
     background-image: url("images\\mobile-image-hero-3.jpg");
+}
+
+.nav-display {
+    animation: slideOut .5s linear both;
 }
 
 .display {

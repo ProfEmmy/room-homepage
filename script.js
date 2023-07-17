@@ -88,7 +88,8 @@ menu_icons.forEach(menu_icon => {
             overlay.classList.toggle("display")
         })
         mobile_navigators.forEach(mobile_navigator => {
-            mobile_navigator.classList.toggle("display")
+            mobile_navigator.classList.toggle("nav-display")
+            mobile_navigator.classList.remove("display")
         })
     })
 })
@@ -99,16 +100,18 @@ close_icons.forEach(close_icon => {
             overlay.classList.add("display")
         })
         mobile_navigators.forEach(mobile_navigator => {
-            mobile_navigator.classList.add("display")
+            mobile_navigator.classList.add("nav-display")
         })
     })
 })
 
 overlays.forEach(overlay => {
     overlay.addEventListener("click", e => {
-        e.target.classList.add("display")
+        overlays.forEach(o => {
+            o.classList.add("display")
+        })
         mobile_navigators.forEach(mobile_navigator => {
-            mobile_navigator.classList.add("display")
+            mobile_navigator.classList.add("nav-display")
         })
     })
 })
@@ -121,6 +124,12 @@ const slides_classes_arr = ["mobile-slide-one", "mobile-slide-two", "mobile-slid
 
 mobile_angles_right.forEach(mobile_angle_right => {
     mobile_angle_right.addEventListener("click", () => {
+        mobile_navigators.forEach(nav => {
+            nav.classList.add("display")
+        })
+
+
+
         index_mobile = index_mobile + 1
 
         if (index_mobile === 3) index_mobile = 0
@@ -137,6 +146,11 @@ mobile_angles_right.forEach(mobile_angle_right => {
 
 mobile_angles_left.forEach(mobile_angle_left => {
     mobile_angle_left.addEventListener("click", () => {
+        mobile_navigators.forEach(nav => {
+            nav.classList.add("display")
+        })
+
+
         index_mobile = index_mobile - 1
 
         if (index_mobile <= 0) index_mobile = 0
