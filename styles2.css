@@ -112,22 +112,19 @@ body {
     font-weight: 700;
     letter-spacing: 0;
     line-height: 35px;
-    font-size: 2em;
+    font-size: 1.8em;
+    width: 100vw;
 }
 
 .mobile-hero-subtxt {
     color: hsl(0, 0%, 63%);
     line-height: 20px;
+    font-size: .8em,
 }
-
-/* .mobile-shop-nowdiv {
-    padding-top: 30px;
-} */
 
 .mobile-shop-now-link {
     color: hsl(0, 0%, 0%);
     text-decoration: none;
-    /* font-size: .8em; */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 12px;
@@ -162,12 +159,15 @@ body {
     letter-spacing: 7px;
     font-weight: 700;
     font-size: 1em;
+    width: 75vw;
 }
 
 .mobile-about {
     margin-top: 25px;
     line-height: 22px;
     color: hsl(0, 0%, 63%);
+    width: 75vw;
+    font-size: .9em;
 }
 
 .mobile-about-img {
