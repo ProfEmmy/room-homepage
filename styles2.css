@@ -151,7 +151,7 @@ body {
 }
 
 .mobile-about-innerdiv {
-    width: 75vw;
+    width: 80vw;
 }
 
 .mobile-about-heading {
@@ -159,15 +159,16 @@ body {
     letter-spacing: 7px;
     font-weight: 700;
     font-size: 1em;
-    width: 75vw;
+    width: 80vw;
+    background-color: red;
 }
 
 .mobile-about {
     margin-top: 25px;
     line-height: 22px;
     color: hsl(0, 0%, 63%);
-    width: 75vw;
-    font-size: .9em;
+    background-color: red;
+    width: 80vw;
 }
 
 .mobile-about-img {
