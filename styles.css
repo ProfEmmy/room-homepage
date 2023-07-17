@@ -48,6 +48,16 @@
     }
 }
 
+@keyframes movingArrow {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 25px;
+    }
+}
+
 .mobile-div {
     display: none;
 }
@@ -189,6 +199,7 @@ hr {
     margin-top: 5px;
     cursor: pointer;
     transition: all .3s;
+    animation: movingArrow 1s linear infinite alternate;
 }
 
 .navigate-icons-div {

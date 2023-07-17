@@ -19,11 +19,13 @@ shop_now_divs.forEach(shop_now_div => {
     shop_now_div.children[0].addEventListener("mouseenter", () => {
         shop_now_div.children[0].style.color = "hsl(0, 0%, 63%)"
         shop_now_div.children[1].style.filter = "invert(80%) sepia(0%) saturate(1935%) hue-rotate(209deg) brightness(86%) contrast(67%)"
+        shop_now_div.children[1].style.animationPlayState = "paused"
     })
 
     shop_now_div.children[1].addEventListener("mouseenter", () => {
         shop_now_div.children[0].style.color = "hsl(0, 0%, 63%)"
         shop_now_div.children[1].style.filter = "invert(80%) sepia(0%) saturate(1935%) hue-rotate(209deg) brightness(86%) contrast(67%)"
+        shop_now_div.children[1].style.animationPlayState = "paused"
     })
 })
 
@@ -31,11 +33,13 @@ shop_now_divs.forEach(shop_now_div => {
     shop_now_div.children[0].addEventListener("mouseleave", () => {
         shop_now_div.children[0].style.color = "hsl(0, 0%, 0%)"
         shop_now_div.children[1].style.filter = "none"
+        shop_now_div.children[1].style.animationPlayState = "running"
     })
 
     shop_now_div.children[1].addEventListener("mouseleave", () => {
         shop_now_div.children[0].style.color = "hsl(0, 0%, 0%)"
         shop_now_div.children[1].style.filter = "none"
+        shop_now_div.children[1].style.animationPlayState = "running"
     })
 })
 

@@ -81,6 +81,16 @@
     }
 }
 
+@keyframes movingArrow {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 30px;
+    }
+}
+
 .desktop-div {
     display: none;
 }
@@ -221,6 +231,7 @@ body {
 .mobile-shop-now-icon {
     margin-left: 30px;
     margin-top: 5px;
+    animation: movingArrow 1s linear infinite alternate;
 }
 
 .mobile-main>img {
